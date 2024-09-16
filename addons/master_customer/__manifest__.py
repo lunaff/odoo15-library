@@ -11,9 +11,11 @@
     "summary": "Master Customer",
     "version": "17.0.1.0.1",
     "category": "Customer",    
-    "depends": ["web", "mail", "sale_management", "base"],
+    "depends": ["web", "mail", "sale", "base"],
     "data": [
-        "views/customer_type.xml"
+        "views/customer_menu.xml",
+        "views/customer_type_form.xml",
+        "views/customer_type_sales.xml",
     ],
     "assets": {
     },
