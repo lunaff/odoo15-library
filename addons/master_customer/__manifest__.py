@@ -13,6 +13,7 @@
     "category": "Customer",    
     "depends": ["web", "mail", "sale", "base"],
     "data": [
+        "security/ir.model.access.csv",
         "views/customer_menu.xml",
         "views/customer_type_form.xml",
         "views/customer_type_sales.xml",

@@ -1,5 +1,5 @@
 <odoo>
-    <!-- <record id="view_customer_type_form" model="ir.ui.view">
+    <record id="view_customer_type_form" model="ir.ui.view">
         <field name="name">customer.type.form</field>
         <field name="model">customer.type</field>
         <field name="arch" type="xml">
@@ -7,20 +7,40 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="customer_type"/>
                     </group>
                 </sheet>
             </form>
         </field>
-    </record> -->
+    </record>
 
-   <record id="view_customer_type_tree" model="ir.ui.view">
+    <record id="view_customer_type_tree" model="ir.ui.view">
         <field name="name">customer.type.tree</field>
         <field name="model">customer.type</field>
         <field name="arch" type="xml">
-            <tree string="Customer Types" editable="bottom">
-                <field name="customer_type"/>
+            <tree string="Customer Types">
+                <field name="name"/>
             </tree>
         </field>
     </record>
+
+      <record id="customer_type_toko" model="customer.type">
+        <field name="name">Toko</field>
+        <field name="customer_type">toko</field>
+    </record>
+
+    <record id="customer_type_bengkel" model="customer.type">
+        <field name="name">Bengkel</field>
+        <field name="customer_type">bengkel</field>
+    </record>
+
+    <record id="customer_type_modern_market" model="customer.type">
+        <field name="name">Modern Market</field>
+        <field name="customer_type">modern_market</field>
+    </record>
+
+    <record id="customer_type_ex_dealer_danapaint" model="customer.type">
+        <field name="name">Ex Dealer Danapaint</field>
+        <field name="customer_type">ex_dealer_danapaint</field>
+    </record>
+    
 </odoo>
