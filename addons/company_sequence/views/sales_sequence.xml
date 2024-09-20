@@ -1,0 +1,11 @@
+<odoo>
+
+    <record id="seq_company_quotation" model="ir.sequence">
+        <field name="name">Company Quotation Sequence</field>
+        <field name="code">company.quotation.sequence</field>
+        <field name="prefix"></field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+    </record>
+
+</odoo>
