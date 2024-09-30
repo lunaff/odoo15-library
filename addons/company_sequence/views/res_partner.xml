@@ -1,0 +1,23 @@
+<odoo>
+    <record id="view_partner_form_company_registry" model="ir.ui.view">
+        <field name="name">res.partner.form.company.registry</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+           <xpath expr="//field[@name='email']" position="after">
+                <field name="company_registry" string="Company Registry"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_tree_company_registry" model="ir.ui.view">
+        <field name="name">res.partner.tree.company.registry</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                <field name="company_registry" string="Company Registry"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,23 @@
+<odoo>
+
+    <menuitem id="menu_loan_view" 
+        name="Loan Book" 
+        parent="library_managed.menu_library_loan" 
+        action="library_managed.action_library_loan"
+        sequence="101" />
+        
+    <menuitem id="menu_loan_wizard" 
+        name="Loan Filter" 
+        parent="library_managed.menu_library_loan" 
+        action="action_wizard_loan"
+        sequence="102" />
+    
+    <record model="ir.actions.act_window" id="action_wizard_loan">
+        <field name="name">Loan Filter Wizard</field>
+        <field name="res_model">wizard.loan</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_wizard_loan"/>
+    </record>
+
+</odoo>

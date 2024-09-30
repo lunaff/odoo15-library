@@ -18,241 +18,152 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/views/form/status_bar_buttons.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/search_panel/search_panel.xml:0
 #, python-format
-msgid "Action"
-msgstr ""
+msgid "All"
+msgstr "Wszystkie"
 
 #. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/menu_canonical_searchbar/searchbar.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
 #, python-format
-msgid "App Icon"
-msgstr ""
+msgid "CLEAR"
+msgstr "WYCZYŚĆ"
 
 #. module: web_responsive
-#: model:ir.actions.act_window,name:web_responsive.res_users_view_form_apps_menu_preferences_action
-msgid "Apps Menu Preferences"
-msgstr ""
+#: model:ir.model.fields,field_description:web_responsive.field_res_users__chatter_position
+msgid "Chatter Position"
+msgstr "Pozycja Czatu"
 
 #. module: web_responsive
-#: model:ir.model.fields,field_description:web_responsive.field_res_users__apps_menu_search_type
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Apps Menu Search Type"
-msgstr ""
+#. openerp-web
+#: code:addons/web_responsive/static/src/legacy/js/web_responsive.js:0
+#, python-format
+msgid "Clear"
+msgstr "Wyczyść"
 
 #. module: web_responsive
-#: model:ir.model.fields,field_description:web_responsive.field_res_users__apps_menu_theme
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Apps Menu Theme"
-msgstr ""
+#. openerp-web
+#: code:addons/web_responsive/static/src/legacy/xml/form_buttons.xml:0
+#, python-format
+msgid "Create"
+msgstr "Utwórz"
 
 #. module: web_responsive
-#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__apps_menu_search_type__canonical
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Canonical"
-msgstr ""
-
-#. module: web_responsive
-#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__apps_menu_search_type__command_palette
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Command Palette"
-msgstr ""
-
-#. module: web_responsive
-#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__apps_menu_theme__community
-msgid "Community"
-msgstr ""
-
-#. module: web_responsive
-#. odoo-javascript
+#. openerp-web
 #: code:addons/web_responsive/static/src/legacy/xml/form_buttons.xml:0
 #, python-format
 msgid "Discard"
 msgstr "Odrzuć"
 
 #. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/command_palette/main.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/legacy/xml/form_buttons.xml:0
 #, python-format
-msgid "Exit"
-msgstr ""
+msgid "Edit"
+msgstr "Edytuj"
 
 #. module: web_responsive
-#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__apps_menu_search_type__fuse
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Fuse"
-msgstr ""
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
+#: code:addons/web_responsive/static/src/components/search_panel/search_panel.xml:0
+#, python-format
+msgid "FILTER"
+msgstr "FILTRUJ"
 
 #. module: web_responsive
-#: model:ir.model,name:web_responsive.model_ir_http
-msgid "HTTP Routing"
-msgstr ""
-
-#. module: web_responsive
-#. odoo-javascript
+#. openerp-web
 #: code:addons/web_responsive/static/src/components/apps_menu/apps_menu.xml:0
 #, python-format
 msgid "Home Menu"
 msgstr ""
 
 #. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/chatter/chatter.xml:0
-#, python-format
-msgid "Log note"
-msgstr ""
-
-#. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/file_viewer/file_viewer.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/attachment_viewer/attachment_viewer.xml:0
 #, python-format
 msgid "Maximize"
 msgstr "Zmaksymalizuj"
 
 #. module: web_responsive
-#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__apps_menu_theme__milk
-msgid "Milk"
-msgstr ""
-
-#. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/file_viewer/file_viewer.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/attachment_viewer/attachment_viewer.xml:0
 #, python-format
 msgid "Minimize"
 msgstr "Zminimalizuj"
 
 #. module: web_responsive
-#. odoo-javascript
+#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__chatter_position__normal
+msgid "Normal"
+msgstr "Normalna"
+
+#. module: web_responsive
+#. openerp-web
 #: code:addons/web_responsive/static/src/legacy/xml/form_buttons.xml:0
 #, python-format
-msgid "New"
-msgstr ""
+msgid "Quick actions"
+msgstr "Szybkie akcje"
 
 #. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/menu_canonical_searchbar/searchbar.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
+#: code:addons/web_responsive/static/src/components/search_panel/search_panel.xml:0
 #, python-format
-msgid "Nothing to show"
-msgstr ""
+msgid "SEE RESULT"
+msgstr "ZOBACZ WYNIK"
 
 #. module: web_responsive
-#. odoo-javascript
+#. openerp-web
 #: code:addons/web_responsive/static/src/legacy/xml/form_buttons.xml:0
 #, python-format
 msgid "Save"
 msgstr "Zapisz"
 
 #. module: web_responsive
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Search Type"
-msgstr ""
-
-#. module: web_responsive
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Search Type Help"
-msgstr ""
-
-#. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/menu_canonical_searchbar/searchbar.xml:0
-#: code:addons/web_responsive/static/src/components/menu_odoo_searchbar/searchbar.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/apps_menu/apps_menu.xml:0
 #, python-format
 msgid "Search menus..."
 msgstr "Przeszukaj menu..."
 
 #. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/chatter/chatter.xml:0
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
 #, python-format
-msgid "Send message"
-msgstr ""
+msgid "Search..."
+msgstr "Szukaj..."
 
 #. module: web_responsive
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "Theme"
-msgstr ""
+#: model:ir.model.fields.selection,name:web_responsive.selection__res_users__chatter_position__sided
+msgid "Sided"
+msgstr "Z boku"
+
+#. module: web_responsive
+#. openerp-web
+#: code:addons/web_responsive/static/src/legacy/xml/form_buttons.xml:0
+#, python-format
+msgid "Today"
+msgstr "Dzisiaj"
+
+#. module: web_responsive
+#. openerp-web
+#: code:addons/web_responsive/static/src/legacy/js/kanban_renderer_mobile.js:0
+#, python-format
+msgid "Undefined"
+msgstr "Niezdefiniowane"
 
 #. module: web_responsive
 #: model:ir.model,name:web_responsive.model_res_users
-msgid "User"
-msgstr ""
+msgid "Users"
+msgstr "Użytkownicy"
 
 #. module: web_responsive
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "a new search algorithm is used"
-msgstr ""
-
-#. module: web_responsive
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "the standard odoo search tool"
-msgstr ""
-
-#. module: web_responsive
-#: model_terms:ir.ui.view,arch_db:web_responsive.res_users_view_form_apps_menu_preferences
-msgid "uses a standard algorithm"
-msgstr ""
-
+#. openerp-web
+#: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
 #, python-format
-#~ msgid "All"
-#~ msgstr "Wszystkie"
-
-#, python-format
-#~ msgid "CLEAR"
-#~ msgstr "WYCZYŚĆ"
-
-#, python-format
-#~ msgid "FILTER"
-#~ msgstr "FILTRUJ"
-
-#, python-format
-#~ msgid "SEE RESULT"
-#~ msgstr "ZOBACZ WYNIK"
-
-#, python-format
-#~ msgid "Search..."
-#~ msgstr "Szukaj..."
-
-#, python-format
-#~ msgid "View switcher"
-#~ msgstr "Przełącznik widoku"
-
-#, python-format
-#~ msgid "Create"
-#~ msgstr "Utwórz"
-
-#~ msgid "Chatter Position"
-#~ msgstr "Pozycja Czatu"
-
-#, python-format
-#~ msgid "Clear"
-#~ msgstr "Wyczyść"
-
-#, python-format
-#~ msgid "Edit"
-#~ msgstr "Edytuj"
-
-#~ msgid "Normal"
-#~ msgstr "Normalna"
-
-#, python-format
-#~ msgid "Quick actions"
-#~ msgstr "Szybkie akcje"
-
-#~ msgid "Sided"
-#~ msgstr "Z boku"
-
-#, python-format
-#~ msgid "Today"
-#~ msgstr "Dzisiaj"
-
-#, python-format
-#~ msgid "Undefined"
-#~ msgstr "Niezdefiniowane"
-
-#~ msgid "Users"
-#~ msgstr "Użytkownicy"
+msgid "View switcher"
+msgstr "Przełącznik widoku"
 
 #~ msgid "fade"
 #~ msgstr "wygasanie"

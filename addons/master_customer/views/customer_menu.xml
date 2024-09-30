@@ -1,16 +1,15 @@
 <odoo>
 
-    <record id="action_customer_type" model="ir.actions.act_window">
+    <menuitem id="menu_sale_customer_type"
+            name="Customer Type"
+            action="action_customer_type"
+            parent="sale.menu_sale_config"
+            sequence="3"/>
+
+
+    <record model="ir.actions.act_window" id="action_customer_type">
         <field name="name">Customer Type</field>
         <field name="res_model">customer.type</field>
         <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="view_customer_type_tree"/>
     </record>
-
-<menuitem id="menu_sale_customer_type"
-    name="Customer Type"
-    sequence="25"
-    action="action_customer_type"
-    parent="sale.menu_sale_config"/>
-
 </odoo>

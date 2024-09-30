@@ -1,0 +1,105 @@
+<odoo>
+    <record id="view_library_book_category_form" model="ir.ui.view">
+        <field name="name">library.book.category.form</field>
+        <field name="model">library.book.category</field>
+        <field name="arch" type="xml">
+            <form string="Library Book Category">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_library_book_category_tree" model="ir.ui.view">
+        <field name="name">library.book.category.tree</field>
+        <field name="model">library.book.category</field>
+        <field name="arch" type="xml">
+            <tree string="Library Book Category">
+                <field name="name" />
+                <field name="description" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_library_book_form" model="ir.ui.view">
+        <field name="name">library.book.form</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <form string="Library Book">
+                <header>
+                    <button name="%(action_report_library_book)d" type="action" string="Print report" class="btn-primary" />
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="attachment" widget="image" style="max-width: 100px;"/>
+                        <field name="name" />
+                        <field name="date_release" />
+                        <field name="author_ids" widget="many2many_tags"/>
+                        <field name="category_id" />
+                        <field name="description" />
+                        <field name="total_borrows" />
+                        <field name="total_copies" />
+                        <field name="available_copies" />
+                        <field name="loan_ids" widget="one2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_library_book_tree" model="ir.ui.view">
+        <field name="name">library.book.tree</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <tree string="Library Books">
+                <field name="attachment" widget="image"/>
+                <field name="name" />
+                <field name="date_release" />
+                <field name="author_ids" widget="many2many_tags"/>
+                <field name="category_id" />
+                <field name="description" />
+                <field name="total_borrows" />
+                <field name="total_copies" />
+                <field name="available_copies" />
+                <field name="loan_ids" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_library_book_kanban" model="ir.ui.view">
+        <field name="name">library.book.kanban</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <kanban string="Library Book">
+                <field name="name"/>
+                <field name="date_release"/>
+                <field name="category_id"/>
+                <field name="available_copies"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_record" style="display: flex;">
+                            <div class="o_kanban_details">
+                                <strong><t t-esc="record.name.value"/></strong>
+                                <div>
+                                    <span>Release Date: <t t-esc="record.date_release.value or ''"/></span>
+                                </div>
+                                <div>
+                                    <span>Category: <t t-esc="record.category_id.value or ''"/></span>
+                                </div>
+                                <div>
+                                    <span>Available Copies: <t t-esc="record.available_copies.value or ''"/></span>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+</odoo>

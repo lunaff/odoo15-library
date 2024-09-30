@@ -1,0 +1,74 @@
+<odoo>
+    <menuitem id="menu_library_management_root"
+        name="Library Management"
+        sequence="100"
+        web_icon="library_managed,static/description/icon.png" />
+
+    <record id="action_library_book_categories" model="ir.actions.act_window">
+        <field name="name">Categories</field>
+        <field name="res_model">library.book.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_noncontect_create">
+                Click to add a new category
+            </p>
+        </field>
+    </record>
+
+    <record id="action_library_book" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="help" type="html">
+            <p class="oe_view_noncontect_create">
+                Click to add a new book
+            </p>
+        </field>
+    </record>
+
+    <record id="action_library_loan" model="ir.actions.act_window">
+        <field name="name">Loan</field>
+        <field name="res_model">library.loan</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_noncontect_create">
+                Click to add a new book
+            </p>
+        </field>
+    </record>
+
+    <record id="action_report_library_loan" model="ir.actions.server">
+        <field name="name">Print PDF Report</field>
+        <field name="model_id" ref="model_library_loan"/>
+        <field name="state">code</field>
+        <field name="code">action_print_report()</field>
+    </record>
+
+    <record id="library_loan_wizard_report" model="ir.actions.act_window">
+        <field name="name">Print Excel Report</field>
+        <field name="res_model">library.loan.export.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="view_library_loan_export_wizard_form"/>
+    </record>
+
+
+    <menuitem id="menu_library_book_categories"
+        name="Categories"
+        parent="menu_library_management_root"
+        action="action_library_book_categories"
+        sequence="30" />
+        
+    <menuitem id="menu_library_book"
+        name="Books"
+        parent="menu_library_management_root"
+        action="action_library_book"
+        sequence="30" />
+
+    <menuitem id="menu_library_loan"
+        name="Loan"
+        parent="menu_library_management_root"
+        action="action_library_loan"
+        sequence="30" />
+
+</odoo>

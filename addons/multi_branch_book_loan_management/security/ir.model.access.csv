@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_library_loan_admin,access.library.loan.admin,model_library_loan,base.group_system,1,1,1,1
+access_library_loan_user,access.library.loan.user,model_library_loan,base.group_user,1,1,1,1
+access_wizard_loan_admin,access.wizard.loan.admin,model_wizard_loan,base.group_system,1,1,1,1
+access_wizard_loan_user,access.wizard.loan.user,model_wizard_loan,base.group_user,1,1,1,1

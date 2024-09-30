@@ -1,0 +1,25 @@
+<odoo>
+
+    <record id="multi_library_loan_form" model="ir.ui.view">
+        <field name="name">library.loan.form.inherit</field>
+        <field name="model">library.loan</field>
+        <field name="inherit_id" ref="library_managed.view_library_loan_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='book_id']" position="after">
+                <field name="company_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="multi_library_loan_tree" model="ir.ui.view">
+        <field name="name">library.loan.tree.inherit</field>
+        <field name="model">library.loan</field>
+        <field name="inherit_id" ref="library_managed.view_library_loan_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='book_id']" position="after">
+                <field name="company_id" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

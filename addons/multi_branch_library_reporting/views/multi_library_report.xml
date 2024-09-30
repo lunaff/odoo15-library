@@ -1,0 +1,34 @@
+<odoo>
+    <record id="view_library_branch_report_form" model="ir.ui.view">
+        <field name="name">Library Branch Report Form</field>
+        <field name="model">multi.report</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="company_id"/>
+                    <field name="report_period_start"/>
+                    <field name="report_period_end"/>
+                    <field name="total_books"/>
+                    <field name="total_loans"/>
+                    <field name="available_books"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_library_branch_report_tree" model="ir.ui.view">
+        <field name="name">Library Branch Report Tree</field>
+        <field name="model">multi.report</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="company_id"/>
+                <field name="report_period_start"/>
+                <field name="report_period_end"/>
+                <field name="total_books"/>
+                <field name="total_loans"/>
+                <field name="available_books"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

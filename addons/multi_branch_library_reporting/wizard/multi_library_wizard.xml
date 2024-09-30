@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_library_branch_report_wizard_form" model="ir.ui.view">
+        <field name="name">Library Branch Report Wizard</field>
+        <field name="model">multi.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generate Library Branch Report">
+                <group>
+                    <field name="company_id"/>
+                    <field name="report_period_start"/>
+                    <field name="report_period_end"/>
+                </group>
+                <footer>
+                    <button name="action_generate_report" string="Generate Report" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

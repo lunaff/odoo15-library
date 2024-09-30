@@ -5,6 +5,8 @@
     'description': 'Creates companies when the module is installed.',
     'depends': ['web', 'mail', 'base', 'sale'],
     'data': [
+        'security/ir.model.access.csv',
+        'views/res_partner.xml',
         'views/sales_sequence.xml',
     ],
     'assets': {
