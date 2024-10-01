@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_wizard_report" model="ir.ui.view">
+        <field name="name">wizard.report.form</field>
+        <field name="model">wizard.report</field>
+        <field name="arch" type="xml">
+            <form string="Generate Library Branch Report">
+                <group>
+                    <field name="company_id"/>
+                    <field name="report_period_start"/>
+                    <field name="report_period_end"/>
+                </group>
+                <footer>
+                    <button name="action_generate_report" string="Generate Excel Report" type="object" class="btn-primary"/>
+                    <button name="%(action_report_pdf)d" type="action" string="Generate PDF report" class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

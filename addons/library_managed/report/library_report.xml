@@ -1,0 +1,20 @@
+<odoo>
+    <!-- <report
+        id="library_branch_report_pdf"
+        model="wizard.report"
+        string="Library Branch Report"
+        report_type="qweb-pdf"
+        name="library_managed.report_library_branch_template"
+        file="library_managed.report_library_branch_template"
+        attachment_use="False"
+    /> -->
+
+    <record id="action_report_pdf" model="ir.actions.report">
+        <field name="name">Library Report</field>
+        <field name="model">wizard.report</field>
+        <field name="report_name">library_managed.report_library_company_template</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="binding_model_id" ref="model_wizard_report" />
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

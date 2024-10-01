@@ -10,8 +10,6 @@
                     <button name="action_borrow_book" type="object" string="Borrow" class="btn-primary" />
                     <button name="action_return_book" type="object" string="Return" class="btn-secondary" />
                     <button string="Cancel" class="btn-default" special="cancel"/>
-                    <button name="%(library_loan_report_action)d" type="action" string="Print PDF Report" class="btn-primary"/>
-                    <button name="%(library_loan_wizard_report)d" type="action" string="Print Excel report" class="btn-primary" />
                 </header>
                 <sheet>
                     <group>
@@ -38,5 +36,24 @@
             </tree>
         </field>
     </record>
+
+    <record id="view_wizard_loan" model="ir.ui.view">
+        <field name="name">wizard.loan.form</field>
+        <field name="model">wizard.loan</field>
+        <field name="arch" type="xml">
+            <form string="Loan Filter Wizard">
+                <group>
+                    <field name="company_id"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                </group>
+                <footer>
+                    <button name="action_search_loans" string="Search Loans" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>    
+
 
 </odoo>

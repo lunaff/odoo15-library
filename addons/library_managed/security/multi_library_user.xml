@@ -1,0 +1,62 @@
+<odoo>
+    <data>
+
+        <record id="group_library_admin" model="res.groups">
+            <field name="name">Library Administrator</field>
+        </record>
+
+        <record id="group_library_user" model="res.groups">
+            <field name="name">Library User</field>
+        </record>
+
+        <record id="library_book_admin_rule" model="ir.rule">
+            <field name="name">Admin Access to All Library Books</field>
+            <field name="model_id" ref="model_library_book"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('library_managed.group_library_admin'))]"/>
+        </record>
+
+        <record id="library_book_company_user_rule" model="ir.rule">
+            <field name="name">Book Access per Branch</field>
+            <field name="model_id" ref="model_library_book"/>
+            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>
+            <field name="groups" eval="[(4, ref('library_managed.group_library_user'))]"/>
+        </record>
+
+        <record id="library_report_branch_rule" model="ir.rule">
+            <field name="name">Loan Access per Branch</field>
+            <field name="model_id" ref="model_library_loan"/>
+            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>
+            <field name="groups" eval="[(4, ref('library_managed.group_library_user'))]"/>
+        </record>
+
+        <record id="rule_wizard_loan_admin" model="ir.rule">
+            <field name="name">Wizard Loan: Admin Access All Loans</field>
+            <field name="model_id" ref="model_wizard_loan"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('library_managed.group_library_admin'))]"/>
+        </record>
+
+        <record id="rule_wizard_loan_user_company" model="ir.rule">
+            <field name="name">Wizard Loan: Access User's Company Loans</field>
+            <field name="model_id" ref="model_wizard_loan"/>
+            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>
+            <field name="groups" eval="[(4, ref('library_managed.group_library_user'))]"/>
+        </record>
+
+        <record id="rule_wizard_report_admin" model="ir.rule">
+            <field name="name">Wizard Report: Admin Access All Report</field>
+            <field name="model_id" ref="model_wizard_report"/>
+            <field name="domain_force">[(1, '=', 1)]</field> 
+            <field name="groups" eval="[(4, ref('library_managed.group_library_admin'))]"/>
+        </record>
+
+        <record id="rule_wizard_report_user_company" model="ir.rule">
+            <field name="name">Wizard Report: Access User's Company Report</field>
+            <field name="model_id" ref="model_wizard_report"/>
+            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field> 
+            <field name="groups" eval="[(4, ref('library_managed.group_library_user'))]"/>
+        </record>
+
+    </data>
+</odoo>

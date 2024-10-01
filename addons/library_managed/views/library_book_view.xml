@@ -41,6 +41,7 @@
                         <field name="date_release" />
                         <field name="author_ids" widget="many2many_tags"/>
                         <field name="category_id" />
+                        <field name="company_id" />
                         <field name="description" />
                         <field name="total_borrows" />
                         <field name="total_copies" />
@@ -62,6 +63,7 @@
                 <field name="date_release" />
                 <field name="author_ids" widget="many2many_tags"/>
                 <field name="category_id" />
+                <field name="company_id" />
                 <field name="description" />
                 <field name="total_borrows" />
                 <field name="total_copies" />
@@ -79,6 +81,7 @@
                 <field name="name"/>
                 <field name="date_release"/>
                 <field name="category_id"/>
+                <field name="company_id" />
                 <field name="available_copies"/>
                 <templates>
                     <t t-name="kanban-box">
@@ -90,6 +93,9 @@
                                 </div>
                                 <div>
                                     <span>Category: <t t-esc="record.category_id.value or ''"/></span>
+                                </div>
+                                <div>
+                                    <span>Company: <t t-esc="record.company_id.value or ''"/></span>
                                 </div>
                                 <div>
                                     <span>Available Copies: <t t-esc="record.available_copies.value or ''"/></span>

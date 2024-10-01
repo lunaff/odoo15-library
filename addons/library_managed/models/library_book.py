@@ -25,7 +25,7 @@ class LibraryBook(models.Model):
     total_copies = fields.Integer(string="Total Copies", default=1)
     available_copies = fields.Integer(string="Available Copies", compute="_compute_available_copies", store=True)
     loan_ids = fields.One2many("library.loan", "book_id", string="Loans")
-
+    company_id = fields.Many2one('res.company', string='Company', default=lambda self: self.env.company, required=True)
     _sql_constraints = [
         ("name_uniq", "unique(name)", "The book title must be unique"),
     ]

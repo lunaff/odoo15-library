@@ -2,4 +2,7 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_library_book_category,access.library.book.category,model_library_book_category,,1,1,1,1
 access_library_book,access.library.book,model_library_book,,1,1,1,1
 access_library_loan,access.library.loan,model_library_loan,,1,1,1,1
-access_library_loan_wizard,access.library.loan_wizard,model_library_loan_export_wizard,,1,1,1,1
+access_wizard_loan_admin,wizard.loan.admin,model_wizard_loan,,1,1,1,1
+access_wizard_loan_user,wizard.loan.user,model_wizard_loan,,1,1,1,1
+access_wizard_report_admin,access.wizard.report.admin,model_wizard_report,,1,1,1,1
+access_wizard_report_user,access.wizard.report.user,model_wizard_report,,1,1,1,1

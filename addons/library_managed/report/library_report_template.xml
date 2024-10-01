@@ -1,0 +1,33 @@
+<odoo>
+    <template id="report_library_company_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <h2>Library Company Report</h2>
+                <p>Company: <t t-esc="doc.company_id.name"/></p>
+                <p>Period: <t t-esc="doc.report_period_start"/> to <t t-esc="doc.report_period_end"/></p>
+                <h3>Books Loaned</h3>
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Borrower</th>
+                            <th>State</th>
+                            <th>Loan Date</th>
+                            <th>Return Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example to fetch book loans -->
+                        <tr t-foreach="doc.book_loan_ids" t-as="loan">
+                            <td><t t-esc="loan.book_id.name"/></td>
+                            <td t-esc="loan.borrower_id.name"/>
+                            <td t-esc="loan.state"/>
+                            <td t-esc="loan.loan_date"/>
+                            <td t-esc="loan.return_date if loan.return_date else 'Not Returned'"/>
+                        </tr>
+                    </tbody>
+                </table>
+            </t>
+        </t>
+    </template>
+</odoo>
